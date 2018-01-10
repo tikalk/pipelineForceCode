@@ -8,5 +8,5 @@ def test_text_before_sleep():
     assert 'test' == 'test'
     time.sleep(10)
 
-# def test_failed_assertion():
-#     assert 'test1' == 'test2'
+def test_failed_assertion():
+    assert 'test1' == 'test2'
