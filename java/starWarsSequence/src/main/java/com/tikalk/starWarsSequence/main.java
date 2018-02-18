@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.tikalk.starWarsSequence;
 
 /**
  * Hello world!
@@ -12,30 +12,39 @@ public class App
         {
             try 
             {
-                int starWarsSequence = Integer.parseInt(args[0]);
+                String starWarsSequence = args[0];
                 String MovieName = "";
                 switch (starWarsSequence) 
                 {
-                     case 1:
+                     case "1":
                         MovieName = "The Phantom Menace";
                         break;
-                     case 2:
+                     case "2":
                         MovieName = "Attack of the Clones";
                         break;
-                     case 3:
+                     case "3":
                         MovieName = "Revenge of the Sith";
                         break;
-                     case 4:
+                     case "3.1":
+                        MovieName = "Rogue One";
+                        break;
+                    case "3.2":
+                        MovieName = "Solo";
+                        break;
+                     case "4":
                         MovieName = "A New Hope";
                         break;
-                     case 5:
+                     case "5":
                         MovieName = "The Empire Strikes Back";
                         break;
-                     case 6:
+                     case "6":
                         MovieName = "Return of the Jedi";
                         break;
-                     case 7:
+                     case "7":
                         MovieName = "The Force Awakens";
+                        break;
+                     case "8":
+                        MovieName = "The Last Jedi";
                         break;
                 }
                 if( MovieName == "" )
@@ -49,9 +58,8 @@ public class App
                     System.out.println("\t\t\t" + MovieName);
                 }
             }
-            catch (NumberFormatException e) 
+            catch (Exception e)
             {
-                System.err.println("Argument" + args[0] + " must be an integer.");
                 System.exit(2);
             }
         }

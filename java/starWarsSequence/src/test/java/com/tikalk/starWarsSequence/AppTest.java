@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.tikalk.starWarsSequence;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
